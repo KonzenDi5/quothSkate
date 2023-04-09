@@ -1,0 +1,130 @@
+.container {
+    background-color: #ffffff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 20px;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+  }
+  .menu{
+    background-color: #ffffff;
+    height: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    font-family: 'Bebas Neue', cursive;
+    color: black;
+  }
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  .menu li {
+    position: relative;
+  }
+  
+  .menu a {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 0 20px;
+    line-height: 40px;
+  }
+  .menu a:hover{
+    background-color: #000000;
+    color: white;
+    transition: 0.5s;
+  }
+  .menu ul ul {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu ul li:hover > ul {
+    background-color: #000000;
+    color: white;
+    display: block;
+  }
+  
+  .menu ul ul li {
+    position: relative;
+  }
+  
+  .menu ul ul a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  
+  .menu ul ul ul {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    width: 200px;
+    padding: 10px 0;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu ul ul li:hover > ul {
+    display: block;
+  }
+  .search-container {
+    display: flex;
+  }
+  
+  .search-input {
+    border-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 20px;
+    background-color: #000000;
+    color: white;
+    width: 250px;
+  }
+  
+  .search-input:focus {
+    outline: none;
+  }
+  
+  .search-button {   
+    border: none;
+    background-color: transparent;
+    font-size: 16px;
+    color: #ffffff;
+    cursor: pointer;
+
+  }
+  .icon{
+    width: 20px;
+    
+  }
+  .brazil{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  .pt-BR{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }

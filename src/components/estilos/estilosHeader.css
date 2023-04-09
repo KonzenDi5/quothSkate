@@ -1,0 +1,38 @@
+header{
+    width: 100%;
+    height: 10%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: 'Bebas Neue', cursive;
+}
+img{
+    display: flex;
+    justify-content: flex-start;
+}
+nav{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    margin-right: 5%;
+}
+ul{
+    display: flex;
+    justify-content: flex-end;
+   
+}
+li{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+a{
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+.logo{
+    width: 250px;
+}
