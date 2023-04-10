@@ -6,11 +6,11 @@ function Header() {
   return (
     <header>
       <img className='logo' src={logo} />
-      <nav>
-        <ul>
-          <li><a href="#">Instagram</a></li>
-          <li><a href="#">Facebook</a></li>
-          <li><a href="#">Quem somos?</a></li>
+      <nav className='nav'>
+        <ul className='ul'>
+          <li className='ki'><a className='a' href="#">Instagram</a></li>
+          <li className='li'><a className='a' href="#">Facebook</a></li>
+          <li className='li'><a className='a' href="#">Quem somos?</a></li>
         </ul>
       </nav>
     </header>

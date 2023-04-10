@@ -1,18 +1,23 @@
 .container {
     background-color: #ffffff;
-    height: 40px;
     width: 100%;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     padding: 0px 20px;
     font-family: 'Bebas Neue', cursive;
     color: black;
+  z-index: 2;
+    margin-right: 10px;
   }
   .menu{
     background-color: #ffffff;
     height: 40px;
-    width: 100%;
+    margin: 0;
+    padding: 0;
+    width:65%;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -42,10 +47,10 @@
     background-color: #000000;
     color: white;
     transition: 0.5s;
+    
   }
   .menu ul ul {
     display: none;
-    position: absolute;
     top: 40px;
     left: 0;
     background-color: #fff;
@@ -53,11 +58,16 @@
     padding: 10px 0;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
   }
+
   
   .menu ul li:hover > ul {
+    display: block;
+    position: absolute;
     background-color: #000000;
     color: white;
-    display: block;
+    padding: 0;
+    margin: 0;
+    
   }
   
   .menu ul ul li {
@@ -73,7 +83,6 @@
   
   .menu ul ul ul {
     display: none;
-    position: absolute;
     top: 0;
     left: 100%;
     background-color: #fff;
@@ -83,8 +92,10 @@
   }
   
   .menu ul ul li:hover > ul {
-    display: block;
+ display: block;
+    
   }
+  
   .search-container {
     display: flex;
   }
@@ -92,7 +103,7 @@
   .search-input {
     border-color: #ffffff;
     display: flex;
-    justify-content: flex-end;
+
     align-items: center;
     border-radius: 20px;
     background-color: #000000;

@@ -4,6 +4,7 @@ import Menubar from './components/Menubar';
 import Card from './components/Card'
 import Content from './components/ProductGrid';
 import Footer from './components/Footer';
+import './components/estilos/estiloApp.css'
 
 
 function App() {

@@ -6,28 +6,29 @@ header{
     flex-direction: row;
     align-items: center;
     font-family: 'Bebas Neue', cursive;
+z-index: 1;
 }
-img{
+.logo{
     display: flex;
     justify-content: flex-start;
 }
-nav{
+.nav{
     display: flex;
     justify-content: flex-end;
     width: 100%;
     margin-right: 5%;
 }
-ul{
+.ul{
     display: flex;
     justify-content: flex-end;
    
 }
-li{
+.li{
     display: flex;
     justify-content: flex-end;
     
 }
-a{
+.a{
     margin-left: 15px;
     color: white;
     text-decoration: none;

@@ -8,7 +8,7 @@ import image5 from './images/image5.png'
 import image6 from './images/image6.png'
 function Card() {
   return (
-    <div className="container">
+    <div className="cards">
       <div className="box">
         <img src={image1} />
       </div>
