@@ -1,16 +1,54 @@
-import React from 'react';
-import logo from './images/quothwhite.png'
-import './estilos/estilosHeader.css'
+import React from "react";
+import logo from "./images/quothwhite.png";
+import "./estilos/estilosHeader.css";
+import {Link} from 'react-router-dom'
+
+
 
 function Header() {
   return (
     <header>
-      <img className='logo' src={logo} />
-      <nav className='nav'>
-        <ul className='ul'>
-          <li className='ki'><a className='a' href="#">Instagram</a></li>
-          <li className='li'><a className='a' href="#">Facebook</a></li>
-          <li className='li'><a className='a' href="#">Quem somos?</a></li>
+      <Link to='/'>
+      <img alt="logo" className="logo" src={logo} />
+      </Link>
+      <nav className="nav">
+        <Link to='/login'>
+      <button className="button">
+        
+          LOGIN
+          <div class="arrow-wrapper">
+            <div class="arrow"></div>
+          </div>
+        
+        </button>
+        </Link>
+        <div>OU</div>
+        <Link to='/cadastro'>
+        <button className="button">
+        
+          CADASTRE-SE
+          <div class="arrow-wrapper">
+            <div class="arrow"></div>
+          </div>
+        
+        </button>
+        </Link>
+        <ul className="ul">
+          <li className="ki">
+            <a className="a" href="#">
+              Instagram
+            </a>
+          </li>
+          <li className="li">
+            <a className="a" href="#">
+              Facebook
+            </a>
+          </li>
+          <li className="li">
+            <a className="a" href="#">
+              Quem somos?
+            </a>
+          </li>
         </ul>
       </nav>
     </header>
