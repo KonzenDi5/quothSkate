@@ -41,7 +41,7 @@ header {
   cursor: pointer;
 }
 
-.button {
+.buttonLogin {
   --primary-color: #ffffff;
   --secondary-color: #000000;
   --hover-color: #c52525;
@@ -61,13 +61,13 @@ header {
   font-weight: bold;
 }
 
-.button .arrow-wrapper {
+.buttonLogin .arrow-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.button .arrow {
+.buttonLogin .arrow {
   margin-top: 1px;
   width: var(--arrow-width);
   background: var(--primary-color);
@@ -76,7 +76,7 @@ header {
   transition: 0.2s;
 }
 
-.button .arrow::before {
+.buttonLogin .arrow::before {
   content: "";
   box-sizing: border-box;
   position: absolute;
@@ -90,15 +90,75 @@ header {
   transform: rotate(-45deg);
 }
 
-.button:hover {
+.buttonLogin:hover {
   background-color: var(--hover-color);
 }
 
-.button:hover .arrow {
+.buttonLogin:hover .arrow {
   background: var(--secondary-color);
 }
 
-.button:hover .arrow:before {
+.buttonLogin:hover .arrow:before {
+  right: 0;
+}
+.buttonCadastro {
+  --primary-color: #ffffff;
+  --secondary-color: #000000;
+  --hover-color: #c52525;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  text-decoration: none;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+.buttonCadastro .arrow-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonCadastro .arrow {
+  margin-top: 1px;
+  width: var(--arrow-width);
+  background: var(--primary-color);
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+.buttonCadastro .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+.buttonCadastro:hover {
+  background-color: var(--hover-color);
+}
+
+.buttonCadastro:hover .arrow {
+  background: var(--secondary-color);
+}
+
+.buttonCadastro:hover .arrow:before {
   right: 0;
 }
 
@@ -107,6 +167,7 @@ header {
   header {
       flex-direction: column;
       height: auto;
+      font-size: 10px;
   }
   
   .nav {
@@ -114,12 +175,22 @@ header {
       margin-top: 1em;
   }
   
-  .button {
+  .buttonLogin {
       margin-top: 1em;
       margin-bottom: 1em;
       width: 100%;
       justify-content: center;
+      font-size: 8px;
+      width: 60px;
   }
+  .buttonCadastro {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    justify-content: center;
+    font-size: 8px;
+    width: 150px;
+}
   
   .ul {
       justify-content: center;
@@ -128,4 +199,5 @@ header {
   .li {
       margin: 0 0.5em;
   }
+  
 }

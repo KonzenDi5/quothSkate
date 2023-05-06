@@ -13,7 +13,7 @@ function Header() {
       </Link>
       <nav className="nav">
         <Link to='/login'>
-      <button className="button">
+      <button className="buttonLogin">
         
           LOGIN
           <div class="arrow-wrapper">
@@ -24,7 +24,7 @@ function Header() {
         </Link>
         <div>OU</div>
         <Link to='/cadastro'>
-        <button className="button">
+        <button className="buttonCadastro">
         
           CADASTRE-SE
           <div class="arrow-wrapper">
