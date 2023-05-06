@@ -33,22 +33,22 @@ function Home() {
     <div className='Home'>
     <div className="cards">
       <div className="box">
-        <img src={image1} alt='skate'/>
+        <img src={image1} alt='skate1'/>
       </div>
       <div className="box">
-        <img src={image2} alt='skate'/>
+        <img src={image2} alt='skate1'/>
       </div>
       <div className="box">
-        <img src={image3} alt='skate'/>
+        <img src={image3} alt='skate1'/>
       </div>
       <div className="box">
-        <img src={image4} alt='skate'/>
+        <img src={image4} alt='skate1'/>
       </div>
       <div className="box">
-        <img src={image5}alt='skate'/>
+        <img src={image5}alt='skate1'/>
       </div>
       <div className="box">
-        <img src={image6} alt='skate'/>
+        <img src={image6} alt='skate1'/>
       </div>
     </div>
     <div className="product-grid">

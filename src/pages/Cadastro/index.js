@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import {collection, addDoc} from 'firebase/firestore'
 import {db} from './firebaseConection'
 import './Cadastro.css'
+import skate from './images/skate.png'
 
 
 
@@ -42,10 +43,14 @@ function Cadastro() {
     })
   }
 
+
   
 
   return (
     <div className='login'>
+      <div className='ilustration'>
+        <img alt='skate' src={skate}/>
+      </div>
       <div className='anuncio'>
         <h1>Faça seu cadastro.</h1>
         <p>Usuários cadastrados podem aproveitar até 80% off em nosso site ;)</p>
