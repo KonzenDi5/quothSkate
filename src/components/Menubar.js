@@ -2,11 +2,10 @@ import React, { useState } from 'react';
 import "./estilos/Menu.css";
 import search from './images/search.png'
 import brasil from './images/brasil.png'
-import { useMediaQuery } from 'react-responsive';
+
 
 function Menubar({ onClick }) {
-  
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+
   const [isOpen, setIsOpen] = useState(false);
 
   const handleClick = () => {
@@ -15,8 +14,8 @@ function Menubar({ onClick }) {
   };
   return (
     <div className="container">
-    <nav className="menu">
-      {isMobile ? (
+    <nav className='menu'>
+      
         <button className="hamburger" onClick={handleClick}>
        <div className={`hamburger-icon ${isOpen ? 'open' : ''}`} >
       <span></span>
@@ -25,17 +24,15 @@ function Menubar({ onClick }) {
       <span></span>
     </div>
         </button>
-      ) : (
-        <ul>
+    
+        <ul className={isOpen ? 'show' : 'hide'}>
         <li>
           <a href="#">PARA O SKATE</a>
           <ul>
             <li><a href="#">Submenu 1.1</a></li>
             <li><a href="#">Submenu 1.2</a></li>
-            <li><a href="#">Submenu 1.3</a></li>
-            <li><a href="#">Submenu 1.4</a></li>
-            <li><a href="#">Submenu 1.5</a></li>
-            <li><a href="#">Submenu 1.6</a></li>
+        
+
           </ul>
         </li>
         <li>
@@ -43,10 +40,6 @@ function Menubar({ onClick }) {
           <ul>
             <li><a href="#">Submenu 2.1</a></li>
             <li><a href="#">Submenu 2.2</a></li>
-            <li><a href="#">Submenu 2.3</a></li>
-            <li><a href="#">Submenu 2.4</a></li>
-            <li><a href="#">Submenu 2.5</a></li>
-            <li><a href="#">Submenu 2.6</a></li>
           </ul>
         </li>
         <li>
@@ -55,25 +48,17 @@ function Menubar({ onClick }) {
             <li><a href="#">Submenu 3.1</a></li>
             <li><a href="#">Submenu 3.2</a></li>
             <li><a href="#">Submenu 3.3</a></li>
-            <li><a href="#">Submenu 3.4</a></li>
-            <li><a href="#">Submenu 3.5</a></li>
-            <li><a href="#">Submenu 3.6</a></li>
+
           </ul>
         </li>
         <li>
           <a href="#">CLUBE QUOTH</a>
           <ul>
             <li><a href="#">Submenu 4.1</a></li>
-            <li><a href="#">Submenu 4.2</a></li>
-            <li><a href="#">Submenu 4.3</a></li>
-            <li><a href="#">Submenu 4.4</a></li>
-            <li><a href="#">Submenu 4.5</a></li>
-            <li><a href="#">Submenu 4.6</a></li>
+         
           </ul>
         </li>
       </ul>
-      
-        )}
     </nav>
 
     <div className="pt-BR">

@@ -22,6 +22,7 @@
     font-family: 'Bebas Neue', cursive;
     color: black;
   }
+ 
   .menu ul {
     list-style: none;
     margin: 0;
@@ -139,7 +140,16 @@
     justify-content: center;
   }
   
+  
   @media screen and (max-width: 768px) {
+    
+    ul.hide{
+      display: none;
+    }
+    ul.show{
+      display: flex;
+    }
+  
     .search-input {
       border-color: #ffffff;
       display: flex;
