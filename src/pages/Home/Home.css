@@ -187,9 +187,28 @@ box-shadow: -11px 15px 21px -6px rgba(138,136,138,1);
     grid-template-rows: repeat(4, 1fr);
     grid-gap: 10px;
   }
+
   .product img {
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
+  }
+  .buy {
+    width: 70px;
+    height: auto;
+    float: left;
+    transition: .5s linear;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    margin: 0 5px;
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: 900;
+    background-color: #ffffff;
+    color: black;
   }
 }
 
