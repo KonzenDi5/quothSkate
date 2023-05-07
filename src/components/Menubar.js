@@ -26,9 +26,9 @@ function Menubar({ onClick }) {
         </button>
     
         <ul className={isOpen ? 'show' : 'hide'}>
-        <li>
+        <li className='paraSkate'>
           <a href="#">PARA O SKATE</a>
-          <ul>
+          <ul >
             <li><a href="#">Submenu 1.1</a></li>
             <li><a href="#">Submenu 1.2</a></li>
         
@@ -53,10 +53,6 @@ function Menubar({ onClick }) {
         </li>
         <li>
           <a href="#">CLUBE QUOTH</a>
-          <ul>
-            <li><a href="#">Submenu 4.1</a></li>
-         
-          </ul>
         </li>
       </ul>
     </nav>

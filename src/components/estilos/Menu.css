@@ -142,13 +142,34 @@
   
   
   @media screen and (max-width: 768px) {
+   
     
     ul.hide{
       display: none;
+      transition: all 0.5s;
     }
     ul.show{
       display: flex;
+      flex-direction: column;
+      z-index: 2;
+      color: rgb(255, 255, 255);
+      transition: all 0.5s;
+    
     }
+    li{
+ 
+      background-color: #000;
+      color: white;
+      z-index: 1;
+      transition: all 0.5s;
+      
+    }
+    
+  .menu a{ 
+    color:white;
+    transition: all 0.5s;
+    z-index: 3;
+  }
   
     .search-input {
       border-color: #ffffff;

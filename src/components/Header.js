@@ -35,7 +35,7 @@ function Header() {
         </button>
         </Link>
         <ul className="ul">
-          <li className="ki">
+          <li className="li">
             <a className="a" href="#">
               Instagram
             </a>
