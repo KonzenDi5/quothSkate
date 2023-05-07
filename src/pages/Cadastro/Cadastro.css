@@ -61,5 +61,30 @@ background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(138,0,0,1) 90%, rgba(1
 .ilustration{
   margin-left: -300px;
 }
+@media screen and (max-width: 768px) {
+  .login {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .anuncio {
+    margin-right: 0;
+    margin-left: 0;
+    text-align: center;
+  }
+  
+  .ilustration {
+    margin-left: -550px;
+    margin-top: 20px;
+    width: 10px;
+  }
+  .skate3d{
+    width: 300px;
+  }
+  .containerCadastro{
+    margin-bottom: 50px;
+  }
+}
+
 
 

@@ -49,7 +49,7 @@ function Cadastro() {
   return (
     <div className='login'>
       <div className='ilustration'>
-        <img alt='skate' src={skate}/>
+        <img className='skate3d' alt='skate' src={skate}/>
       </div>
       <div className='anuncio'>
         <h1>Faça seu cadastro.</h1>
