@@ -1,13 +1,32 @@
-import React from "react";
+import React, { useState } from 'react';
 import "./estilos/Menu.css";
 import search from './images/search.png'
 import brasil from './images/brasil.png'
+import { useMediaQuery } from 'react-responsive';
 
-function Menubar() {
+function Menubar({ onClick }) {
+  
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+    onClick && onClick();
+  };
   return (
     <div className="container">
     <nav className="menu">
-      <ul>
+      {isMobile ? (
+        <button className="hamburger" onClick={handleClick}>
+       <div className={`hamburger-icon ${isOpen ? 'open' : ''}`} >
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+        </button>
+      ) : (
+        <ul>
         <li>
           <a href="#">PARA O SKATE</a>
           <ul>
@@ -53,7 +72,10 @@ function Menubar() {
           </ul>
         </li>
       </ul>
+      
+        )}
     </nav>
+
     <div className="pt-BR">
         pt-BR <img className="brazil" src={brasil} />
     </div>

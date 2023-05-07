@@ -37,3 +37,17 @@
     
 }
 
+/* media query para largura de tela menor que 768px */
+@media (max-width: 768px) {
+    .containerFooter{
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+
+    .localizacao,
+    .contato {
+        padding: 30px;
+        max-height: none;
+    }
+}
