@@ -1,0 +1,91 @@
+/* Cart.css */
+.cart-container {
+  padding: 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Bebas Neue', cursive;
+}
+
+.cart-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+}
+
+.cart-item {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -8px 14px 36px 17px rgba(0, 0, 0, 0.123);
+}
+
+.cart-item img {
+  width: 70px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.item-quantity {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cart-total {
+  margin-top: 150px;
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.button-comprar {
+  margin-top: 50px; /* Adjust the margin for better spacing */
+  font-weight: bold;
+  font-size: 30px; /* Adjust the font size for better readability on smaller screens */
+  
+}
+
+.comprar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+/* Media Queries */
+
+/* For screens up to 600px wide (e.g., smartphones) */
+@media (max-width: 600px) {
+  .cart-item {
+      width: 100%; /* Full-width items in a single column */
+  }
+
+  .cart-items {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Adjust column width */
+  }
+
+  .cart-total {
+      margin-top: 50px; /* Adjust the margin for better spacing */
+      font-size: 30px; /* Adjust the font size for better readability */
+  }
+}
+
+/* For screens between 601px and 1200px wide (e.g., tablets) */
+@media (min-width: 601px) and (max-width: 1200px) {
+  .cart-items {
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); /* Adjust column width */
+  }
+}

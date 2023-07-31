@@ -60,7 +60,7 @@
   font-family: "Roboto", "Segoe UI", sans-serif;
   text-transform: uppercase;
   color: var(--color);
-  margin-left: 55px;
+  margin-left: 68px;
   margin-top: 30px;
   width: 100px;
   height: 40px;
@@ -102,5 +102,10 @@
 .btnLogin:active {
   filter: brightness(0.7);
   transform: scale(0.98);
+}
+
+.rememberMe{
+  margin-top: 35px;
+  margin-left: 25px;
 }
 

@@ -7,6 +7,9 @@ header {
   flex-direction: row;
   align-items: center;
   font-family: 'Bebas Neue', cursive;
+  color: white;
+
+
 }
 
 .logo {
@@ -201,3 +204,54 @@ header {
   }
   
 }
+.userLoged{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content: flex-end;
+  font-size: 20px;
+}
+.buttonLogout{
+  margin-left: 100px;
+  font-family: 'Bebas Neue', cursive;
+  color: rgb(0, 0, 0);
+  background-color: #ffffff;
+  font-size: 15px;
+  padding: 6px 15px;
+}
+
+
+
+
+.cart-container-left {
+  position: relative;
+}
+
+.cart-icon-container {
+  position: relative;
+  cursor: pointer;
+}
+
+.cart-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.cart-item-count {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+  color: white;
+  font-size: 12px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
